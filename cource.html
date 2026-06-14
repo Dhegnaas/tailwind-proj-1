@@ -23,10 +23,75 @@
                     <div class="flex items-center space-x-2">
                         <a class="text-white hover:bg-gray-900 rounded py-2 px-3" href="/index.html">Home</a>
                         <a class="text-white hover:bg-gray-900 rounded py-2 px-3 bg-black" href="/cources.html">Courses</a>
-                        <a class="text-white hover:bg-gray-900 rounded py-2 px-3" href="/">Add Course</a>
+                        <a class="text-white hover:bg-gray-900 rounded py-2 px-3" href="/addCource.html">Add Course</a>
                     </div>
                 </div>
             </div>
     </nav>
+    <!-- Back Buttom -->
+     <section>
+     <div class="container mx-auto py-6">
+        <a class="text-indigo-500 hover:text-indigo-700" href="/cources.html">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Home
+        </a>
+     </div>
+    </section>
+    <!-- class info -->
+     <section class="bg-indigo-50">
+        <div class="container m-auto py-10 px-6 grid grid-cols-1 md:grid-cols-[7fr_4fr] gap-6">
+            <!-- course details -->
+             <main>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
+                    <p class="text-gray-500 mb-4">Front-End </p>
+                    <h2 class="text-3xl font-bold mb-4">Html and Css</h2>
+                    <div class="text-orange-700 flex items-center justify-center md:justify-start gap-2">
+                        <i class="fa-solid fa-code text-lg"></i>
+                        <span class="font-semibold">Html and Css</span>
+                    </div>
+                </div>
+        <!-- description -->
+         <div class="mt-6 bg-white rounded-lg p-6 shadow-md">
+            <h2 class="text-lg font-bold mb-6">cource description</h2>
+            <p>
+                Want to master HTML and CSS? Our hands-on course will guide you through the process of creating stunning, responsive
+                websites. Learn the fundamentals of web design and development, from structuring content with HTML to styling it
+                beautifully with CSS. With real-world projects, you’ll gain the skills needed to build professional-grade websites that
+                adapt to any screen size. Start your journey today and unlock the potential of web development!
+            </p>
+                <hr class="mt-4">
+                <!-- course duration and course price -->
+                 <div class="flex justify-between font-semibold text-indigo-500 my-2">
+                    <h3>Duration : 2 months</h3>
+                    <h3>Price : $29</h3>
+                 </div>
+             </div>
+             </main>
+
+        <!-- Instructor information -->
+            <aside>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-3xl font-bold mb-6">Instructor Info</h2>
+                    <h3 class="text-2xl">Abdirahman Mohamed</h3>
+                    <p class mt-2>
+                        Abdirahman Mohamed is a talented frontend developer skilled in creating responsive, user-friendly web interfaces. Proficient in HTML, CSS,
+                        JavaScript, and frameworks like React, he delivers clean, efficient code and innovative designs. Passionate about modern
+                        web trends, Mohamed thrives on building seamless, interactive user experiences.
+                    </p>
+                    <hr class="my-4">
+                    <h3 class="text-xl">Contact Email</h3>
+                    <p class="font-bold p-2 bg-indigo-100 rounded my-2">A.dhegnas@gmail.com</p>
+                    <h3 class="text-xl">Contact Phone</h3>
+                    <p class="font-bold p-2 bg-indigo-100 rounded my-2">+252617624133</p>
+                </div>
+
+                <!-- Edit and Delete Buttons -->
+                 <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+                    <h3 class="text-xl mb-6">manage cource</h3>
+                    <a class="bg-indigo-500 rounded-full text-white text-center font-bold py-2 px-4 hover:bg-indigo-600 block" href="">edit cource</a>
+                    <a class="bg-red-500 mt-4 rounded-full text-white text-center font-bold py-2 px-4 hover:bg-red-600 block" href="">delete cource</a>
+                 </div>
+            </aside>
+         </div>
+     </section>
 </body>
 </html>

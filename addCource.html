@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses </title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="bg-indigo-700 border-b border-indigo-500">
+        <div class=" mx-w-7xl max-auto px-2 sm:px-6 lg:px-8">
+            <div class="h-20 flex items-center justify-center flex-1 md:justify-start">
+                <!-- logo -->
+                <a class="flex items-center" href="index.html">
+                    <img class="h-8 w-auto" src="./logo.png" alt="">
+                    <span class="hidden md:block ml-2 font-bold text-white">iftiinshe</span>
+                </a>
+
+                <!-- menu -->
+                <div class="ml-2 md:ml-auto">
+                    <div class="flex items-center space-x-2">
+                        <a class="text-white hover:bg-gray-900 rounded py-2 px-3" href="/index.html">Home</a>
+                        <a class="text-white hover:bg-gray-900 rounded py-2 px-3 bg-black"
+                            href="/cources.html">Courses</a>
+                        <a class="text-white hover:bg-gray-900 rounded py-2 px-3" href="/addCource.html">Add Course</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <section class="bg-indigo-100">
+        <div class="container m-auto max-w-2xl py-24">
+            <div class="bg-white px-6 py-8 shadow-md rounded-md border mt-4">
+                <form>
+                    <h2 class="text-3xl text-center font-semibold mb-6">Add coource</h2>
+                        <div class="">
+                            <label class="text-gray-700 mb-6 block font-bold" for="type">Cource Type</label>
+                            <select 
+                            class="border rounded w-full py-2 px-3" name="type" id="type" required>
+                        <option value="full-stack">full stack</option>
+                        <option value="front-end">front-end</option>
+                        <option value="back-end">back-end</option>
+                        <option value="database">database</option>
+                        </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="tittle">Cource Title</label>
+                            <input class="border rounded w-full py-2 px-3 mb-2" type="text" name="" id="title"
+                            placeholder="eg. react cource"
+                            required >
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="description">Cource description</label>
+                            <textarea
+                            class="border rounded w-full py-2 px-3"
+                            rows="4"
+                            placeholder="Add your cource description, ..."
+                            >
+                         </textarea>
+
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="duration">Duration</label>
+                            <input class="border rounded w-full py-2 px-3 mb-2" type="text" name="" id="duration" placeholder="eg. 1 month."
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="Technology">Technology</label>
+                            <input class="border rounded w-full py-2 px-3 mb-2" type="text" name="" id="Technology" placeholder="eg. html css."
+                                required>
+                        </div>
+                </form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="price">price</label>
+                            <input class="border rounded w-full py-2 px-3 mb-2" type="numer  " name="" id="price" placeholder="eg. $ 10"
+                                required>
+                        </div>
+                        <h3 class="text-2xl mb-5">Instructure Info</h3>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="Instructure Name">Instructure Name</label>
+                            <input class="border rounded w-full py-2 px-3 mb-2" type="text" name="" id="Instructure Name" placeholder="eg. Abdirahman"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="Bio">Instructure Bio</label>
+                            <textarea class="border rounded w-full py-2 px-3 mb-2" for="name"
+                            >Instructure Bio
+                            </textarea>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-bold mb-2" for="email">Contact Email</label>
+                                <input class="border rounded w-full py-2 px-3 mb-2" type="text  " name="" id="email" placeholder="eg. A@gmail.com"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-bold mb-2" for="number">Contact phone</label>
+                                <input class="border rounded w-full py-2 px-3 mb-2" type="tell  " name="" id="price" placeholder="eg. +25261 7624133"
+                                    required>
+                            </div>
+                        </div>
+                        <button 
+                        class="bg-indigo-500 py-2 px-4 text-white
+                        hover:bg-indigo-600 rounded-full w-full focus:outline-none focus:shadow-outline"
+                        type="submit"
+                        >
+                            Add cource
+                        </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
