@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsApp QR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-2xl shadow-xl text-center w-full max-w-md">
+
+        <h1 class="text-xl font-bold">Scan to Open WhatsApp</h1>
+
+        <canvas id="qr" class="mx-auto mt-5"></canvas>
+
+        <p class="text-gray-500 mt-3">Scan this QR with your phone</p>
+
+    </div>
+
+    <script>
+        const phone = "252617917149";
+        const message = encodeURIComponent("Asc, lacagta waa la xaqiijiyay.");
+
+        const url = `https://wa.me/${phone}?text=${message}`;
+
+        QRCode.toCanvas(document.getElementById('qr'), url);
+    </script>
+
+</body>
+
+</html>
