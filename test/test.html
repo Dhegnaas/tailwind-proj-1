@@ -3,30 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WhatsApp QR</title>
+    <title>Open WhatsApp</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 </head>
 
 <body class="bg-slate-100 flex items-center justify-center min-h-screen">
 
     <div class="bg-white p-8 rounded-2xl shadow-xl text-center w-full max-w-md">
 
-        <h1 class="text-xl font-bold">Scan to Open WhatsApp</h1>
+        <h1 class="text-xl font-bold">WhatsApp Sender</h1>
 
-        <canvas id="qr" class="mx-auto mt-5"></canvas>
+        <p class="text-gray-500 mt-2">
+            Click button to open WhatsApp chat
+        </p>
 
-        <p class="text-gray-500 mt-3">Scan this QR with your phone</p>
+        <button onclick="openWA()" class="mt-6 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl w-full">
+            Open WhatsApp
+        </button>
 
     </div>
 
     <script>
-        const phone = "252617917149";
-        const message = encodeURIComponent("Asc, lacagta waa la xaqiijiyay.");
+        function openWA() {
+            const phone = "252617917149";
+            const message = encodeURIComponent("Asc, lacagta waa la xaqiijiyay.");
 
-        const url = `https://wa.me/${phone}?text=${message}`;
-
-        QRCode.toCanvas(document.getElementById('qr'), url);
+            // THIS OPENS MOBILE OR WEB BASED ON DEVICE
+            window.location.href = `https://wa.me/${phone}?text=${message}`;
+        }
     </script>
 
 </body>
