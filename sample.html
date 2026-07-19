@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Iftiinishe</title>
+
+    <link rel="icon" href="logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(12px);
+        }
+
+
+        .hero {
+
+            background:
+                linear-gradient(135deg,
+                    #4338ca,
+                    #7c3aed);
+
+        }
+
+
+        img {
+
+            transition: .5s;
+
+        }
+
+
+        img:hover {
+
+            transform: scale(1.05);
+
+        }
+
+
+        .card {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, .08);
+
+            transition: .4s;
+
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, .15);
+
+        }
+
+
+
+        .stat {
+
+            transition: .4s;
+
+        }
+
+
+        .stat:hover {
+
+            transform: scale(1.1);
+
+        }
+
+
+        .btn {
+
+            transition: .3s;
+
+        }
+
+
+        .btn:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 30px rgba(79, 70, 229, .4);
+
+        }
+
+
+        footer a {
+
+            transition: .3s;
+
+        }
+
+
+        footer a:hover {
+
+            color: #818cf8;
+
+            transform: translateY(-5px);
+
+        }
+    </style>
+
+
+</head>
+
+
+<body class="bg-gray-100">
+
+
+    <!-- Navbar -->
+
+    <nav class="bg-indigo-700 shadow-lg">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <div class="flex justify-between items-center h-20">
+
+
+                <a href="#" class="flex items-center">
+
+                    <img src="logo.png" class="h-10">
+
+                    <span class="ml-3 text-white text-2xl font-bold">
+                        Iftiinishe
+                    </span>
+
+                </a>
+
+
+                <div class="space-x-3">
+
+                    <a class="text-white px-4 py-2 hover:bg-indigo-800 rounded" href="#">
+                        Home
+                    </a>
+
+
+                    <a class="bg-black text-white px-4 py-2 rounded" href="#">
+                        About
+                    </a>
+
+
+                    <a class="text-white px-4 py-2 hover:bg-indigo-800 rounded" href="#">
+                        Courses
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Hero -->
+
+    <section class="hero py-24 text-center">
+
+
+        <h1 class="text-5xl md:text-6xl font-bold text-white">
+
+            About Iftiinishe
+
+        </h1>
+
+
+        <p class="text-indigo-100 text-xl mt-6">
+
+            Helping students become professional Full Stack Developers
+
+        </p>
+
+
+    </section>
+
+
+
+
+
+    <!-- About -->
+
+
+    <section class="py-20">
+
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+                class="rounded-3xl shadow-2xl">
+
+
+            <div>
+
+
+                <h2 class="text-4xl font-bold text-gray-800">
+
+                    Who We Are
+
+                </h2>
+
+
+                <p class="mt-6 text-gray-600 leading-8">
+
+                    Iftiinishe is an online learning platform designed
+                    to help students master modern web development
+                    through practical projects.
+
+                </p>
+
+
+                <p class="mt-4 text-gray-600 leading-8">
+
+                    We teach HTML, CSS, JavaScript, Tailwind CSS,
+                    Laravel, Vue.js, React, Node.js and MySQL.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Mission -->
+
+
+    <section class="bg-white py-20">
+
+
+        <h2 class="text-4xl font-bold text-center">
+
+            Our Mission
+
+        </h2>
+
+
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 mt-12">
+
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-book text-5xl text-indigo-600"></i>
+
+                <h3 class="text-2xl font-bold mt-5">
+                    Quality Education
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Professional courses for everyone.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-code text-5xl text-indigo-600"></i>
+
+                <h3 class="text-2xl font-bold mt-5">
+                    Practical Learning
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Build real world projects.
+                </p>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-users text-5xl text-indigo-600"></i>
+
+                <h3 class="text-2xl font-bold mt-5">
+                    Community
+                </h3>
+
+                <p class="mt-3 text-gray-600">
+                    Grow together with developers.
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- Stats -->
+
+
+    <section class="bg-indigo-700 py-20">
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 text-center text-white">
+
+
+            <div class="stat">
+                <h2 class="text-5xl font-bold">
+                    25+
+                </h2>
+                <p>
+                    Courses
+                </p>
+            </div>
+
+
+
+            <div class="stat">
+                <h2 class="text-5xl font-bold">
+                    1500+
+                </h2>
+                <p>
+                    Students
+                </p>
+            </div>
+
+
+
+
+            <div class="stat">
+                <h2 class="text-5xl font-bold">
+                    20+
+                </h2>
+                <p>
+                    Instructors
+                </p>
+            </div>
+
+
+
+            <div class="stat">
+                <h2 class="text-5xl font-bold">
+                    4.9★
+                </h2>
+                <p>
+                    Rating
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- CTA -->
+
+
+    <section class="py-20 text-center">
+
+
+        <h2 class="text-4xl font-bold">
+
+            Ready To Start Learning?
+
+        </h2>
+
+
+        <a href="#" class="btn inline-block mt-8 bg-indigo-700 text-white px-10 py-4 rounded-xl">
+
+            Browse Courses
+
+        </a>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <footer class="bg-gray-900 text-white py-10 text-center">
+
+
+        <h2 class="text-2xl font-bold">
+
+            Iftiinishe
+
+        </h2>
+
+
+        <p class="text-gray-400 mt-3">
+
+            Learn Today. Build Tomorrow.
+
+        </p>
+
+
+        <div class="flex justify-center gap-6 mt-6 text-2xl">
+
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+
+
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+
+        </div>
+
+
+        <p class="mt-8 text-gray-500">
+
+            © 2026 Iftiinishe
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
